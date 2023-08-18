@@ -42,7 +42,7 @@ super + shift + v
 
 # unhide window with rofi
 super + alt + v
-    ~/dotfiles/scripts/unhidewindow
+    ~/.config/sxhkd/unhidewindow
 
 # hide/unhide all windows
 super + d
@@ -174,9 +174,9 @@ alt + ctrl + shift + { Right,Left }
     bspc node -d "$DIR" --follow
 
 # open app fast
-super + alt + {b, f, t, s, m, M, a}
-    { bspc rule -a org.wezfurlong.wezterm -o state=floating follow=on center=true && wezterm start -- btop, \
-      firefox, \
+super + alt + {c, f, t, s, m, M, a}
+    {
+      google-chrome-stable
       telegram-desktop, \
       simplescreenrecorder, \
       ~/dotfiles/rofi/mpd/mpd, \
@@ -190,15 +190,7 @@ super + ctrl + c
 
 # powermenu
 ctrl + super + alt + p
-    eww open powermenu
-
-# hide/show bar
-super + ctrl + t
-    eww open-many --toggle bar
-
-super + ctrl + r
-    ~/dotfiles/eww/toggle_bar
-
+    rofi -show power-menu -modi power-menu:~/polybar-collection/themes/nord/modules/rofi-power-menu
 
 # make split ratios equal
 super + equal
@@ -213,9 +205,3 @@ XF86Audio{LowerVolume,RaiseVolume,Mute}
     ~/dotfiles/scripts/volume_dunst {down,up,mute}
 
 # vim: ft=sh tabstop=4
-alt + shift + l
-    bspc quit
-
-alt + shift + z
-    shutdown now
-
