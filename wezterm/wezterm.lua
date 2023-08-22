@@ -29,9 +29,9 @@ local color_scheme = "Nightfox"
 
 return {
 	font = wezterm.font('Consolas NF'),
-	font_size = 14.5,
+	font_size = 15,
 	allow_square_glyphs_to_overflow_width = "Never",
-
+	front_end = "OpenGL",
 	color_scheme = color_scheme,
 
 	-- default_prog = { "/bin/bash", "-l", "-c", "tmux attach || tmux" },
@@ -95,4 +95,25 @@ return {
 			action = wezterm.action({ ActivateTabRelative = -1 }),
 		},
 	},
+	mouse_bindings = {
+		-- 右键粘贴
+		{
+			event = { Down = { streak = 1, button = "Right" } },
+			mods = "NONE",
+			action = wezterm.action { PasteFrom = "Clipboard" }
+		},
+		-- Change the default click behavior so that it only selects
+		-- text and doesn't open hyperlinks
+		{
+			event = { Up = { streak = 1, button = "Left" } },
+			mods = "NONE",
+			action = wezterm.action { CompleteSelection = "PrimarySelection" }
+		},
+		-- and make CTRL-Click open hyperlinks
+		{
+			event = { Up = { streak = 1, button = "Left" } },
+			mods = "CTRL",
+			action = "OpenLinkAtMouseCursor"
+		}
+	}
 }
