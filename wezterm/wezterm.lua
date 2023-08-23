@@ -28,6 +28,7 @@ end)
 local color_scheme = "Nightfox"
 
 return {
+	default_cursor_style = "BlinkingUnderline",
 	font = wezterm.font('Consolas NF'),
 	font_size = 15,
 	allow_square_glyphs_to_overflow_width = "Never",

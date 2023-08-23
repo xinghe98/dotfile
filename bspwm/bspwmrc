@@ -33,5 +33,6 @@ mpd &
 dunst &
 picom -b &
 fcitx5 &
+nm-applet &
 xmodmap ~/.Xmodmap
 $HOME/polybar-collection/launch.sh

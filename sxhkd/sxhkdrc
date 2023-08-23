@@ -168,21 +168,18 @@ super + Print
 shift + Print
     ~/dotfiles/scripts/sshot -m full
 
+super + ctrl + a
+    flameshot gui
+
+
 # send win to next or prev desktop & focus it
 alt + ctrl + shift + { Right,Left }
     DIR={next.local,prev.local}; \
     bspc node -d "$DIR" --follow
 
 # open app fast
-super + alt + {c, f, t, s, m, M, a}
-    {
+super + alt + c
       google-chrome-stable
-      telegram-desktop, \
-      simplescreenrecorder, \
-      ~/dotfiles/rofi/mpd/mpd, \
-      bspc rule -a org.wezfurlong.wezterm -o state=floating follow=on center=true && wezterm start -- "ncmpcpp", \
-      ~/dotfiles/scripts/screenkey
-    }
 
 # move the floating focused window to center
 super + ctrl + c
