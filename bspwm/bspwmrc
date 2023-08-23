@@ -19,6 +19,7 @@ bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a discord desktop='^2'
 bspc rule -a steam desktop='^3'
 bspc rule -a Screenkey manage=off
+bspc rule -a peek state=floating
 bspc rule -a vlc state=floating
 bspc rule -a mpv state=floating
 bspc rule -a feh state=floating center=true
@@ -34,5 +35,5 @@ dunst &
 picom -b &
 fcitx5 &
 nm-applet &
-xmodmap ~/.Xmodmap
+keymapper &
 $HOME/polybar-collection/launch.sh
