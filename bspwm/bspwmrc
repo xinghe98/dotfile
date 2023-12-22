@@ -27,13 +27,14 @@ bspc rule -a imv state=floating center=true
 bspc rule -a SimpleScreenRecorder state=floating
 
 
-feh --bg-fill /home/licg/Pictures/wallhaven.jpg
+feh --bg-fill /home/licg/wall.jpg
 # feh --randomize --bg-fill ~/Pictures/wallpaper/*
 xsetroot -cursor_name left_ptr
 mpd &
 dunst &
-picom -b &
+picom  &
 fcitx5 &
 nm-applet &
 keymapper &
-$HOME/polybar-collection/launch.sh
+# $HOME/polybar-collection/launch.sh
+$HOME/.config/polybar/launch.sh
