@@ -27,12 +27,12 @@ bspc rule -a imv state=floating center=true
 bspc rule -a SimpleScreenRecorder state=floating
 
 
-feh --bg-fill /home/licg/wall.jpg
+feh --bg-fill /home/lcg/图片/wallhaven.jpg
 # feh --randomize --bg-fill ~/Pictures/wallpaper/*
 xsetroot -cursor_name left_ptr
 mpd &
 dunst &
-picom  &
+picom --experimental-backends &
 fcitx5 &
 nm-applet &
 keymapper &
