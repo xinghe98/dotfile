@@ -187,7 +187,8 @@ super + ctrl + c
 
 # powermenu
 ctrl + super + alt + p
-    rofi -show power-menu -modi power-menu:~/polybar-collection/themes/nord/modules/rofi-power-menu
+    rofi -show power-menu -modi power-menu:~/.config/polybar/scripts/powermenu
+
 
 # make split ratios equal
 super + equal
