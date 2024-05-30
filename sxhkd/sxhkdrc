@@ -5,7 +5,7 @@
 
 # terminal emulator
 super + Return
-    wezterm
+    alacritty
 
 super + shift + Return
     bspc rule -a org.wezfurlong.wezterm -o state=floating follow=on center=true && wezterm
@@ -93,7 +93,7 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,shift + }{n,e,u,i}
     bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
