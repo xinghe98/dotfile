@@ -5,7 +5,7 @@
 
 # terminal emulator
 super + Return
-    alacritty
+    wezterm
 
 super + shift + Return
     bspc rule -a org.wezfurlong.wezterm -o state=floating follow=on center=true && wezterm

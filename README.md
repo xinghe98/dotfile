@@ -19,7 +19,7 @@ cd ~
 ## 软件依赖安装
 
 ```shell
-yay -S fortune-mod fortune-mod-zh exa lolcat bspwm fcitx5-im fcitx5-rime polybar picom-ftlabs-git rofi wezterm dunst keymapper sxhkd zsh lxappearance feh
+yay -S fortune-mod fortune-mod-zh exa lolcat bspwm fcitx5-im fcitx5-rime polybar picom-ftlabs-git rofi wezterm dunst keymapper sxhkd zsh lxappearance feh xclip ripgrep
 
 ```
 
@@ -34,7 +34,7 @@ cp picom ~/.config/ -r
 cp rofi ~/.config/ -r
 cp wezterm ~/.config/ -r
 cp sxhkd ~/.config/ -r
-cp polybar ~/.config -r
+cp polybar ~/.config/ -r
 cp keymapper.conf ~/.config/ -r
 cp .zshenv ~/
 cp .p10k.zsh ~/
