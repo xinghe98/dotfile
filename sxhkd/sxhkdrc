@@ -21,6 +21,11 @@ super + @space
 super + Escape
     pkill -USR1 -x sxhkd
 
+alt + @space
+    rofi -show window
+
+super + q
+google-chrome-beta
 #
 # bspwm hotkeys
 #
