@@ -19,7 +19,7 @@ cd ~
 ## 软件依赖安装
 
 ```shell
-yay -S fortune-mod fortune-mod-zh exa lolcat bspwm fcitx5-im fcitx5-rime polybar picom-ftlabs-git rofi wezterm dunst keymapper sxhkd zsh lxappearance feh xclip ripgrep
+yay -S fortune-mod fortune-mod-zh exa lolcat bspwm fcitx5-im fcitx5-rime polybar picom-ftlabs-git rofi wezterm dunst keymapper sxhkd zsh lxappearance feh xclip ripgrep fzf xorg-xsetroot apple_cursor
 
 ```
 
