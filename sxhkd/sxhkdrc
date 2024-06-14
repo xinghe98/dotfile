@@ -25,7 +25,10 @@ alt + @space
     rofi -show window
 
 super + q
-google-chrome-beta
+	google-chrome-beta
+
+super + n
+	neovide
 #
 # bspwm hotkeys
 #
