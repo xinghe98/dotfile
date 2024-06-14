@@ -25,10 +25,14 @@ alt + @space
     rofi -show window
 
 super + q
+<<<<<<< HEAD
 	google-chrome-beta
 
 super + n
 	neovide
+=======
+    google-chrome-beta
+>>>>>>> 19da5423ce688749cd7204eece5cf1709d1d7a7e
 #
 # bspwm hotkeys
 #
