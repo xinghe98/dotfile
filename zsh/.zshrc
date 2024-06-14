@@ -173,3 +173,5 @@ alias music='tmux new-session -s $$ "tmux source-file ~/.ncmpcpp/tsession"'
 _trap_exit() { tmux kill-session -t $$; }
 export MUSIC_DIR=/music
 
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

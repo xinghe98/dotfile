@@ -41,6 +41,18 @@ cp .p10k.zsh ~/
 cp zsh ~/.config/
 reboot
 ```
+```
+xinghe@debian:~$ mv ./* ~/.fonts/^C
+xinghe@debian:~$ ln -s ~/dotfile/bspwm ~/.config/bspwm
+xinghe@debian:~$ ln -s ~/dotfile/dunst ~/.config/dunst
+xinghe@debian:~$ ln -s ~/dotfile/picom ~/.config/picom
+xinghe@debian:~$ ln -s ~/dotfile/rofi ~/.config/rofi
+xinghe@debian:~$ ln -s ~/dotfile/sxhkd ~/.config/sxhkd
+xinghe@debian:~$ ln -s ~/dotfile/polybar ~/.config/polybar
+xinghe@debian:~$ ln -s ~/dotfile/keymapper.conf ~/.config/keymapper.conf
+xinghe@debian:~$ ln -s ~/dotfile/.zshenv ~/.zshenv
+xinghe@debian:~$ ln -s ~/dotfile/zsh ~/.config/zsh
+```
 
 # 结果
 
