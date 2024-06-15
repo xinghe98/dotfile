@@ -27,7 +27,7 @@ alt + @space
 super + q
 	google-chrome
 
-super + n
+super + o
 	neovide
 #
 # bspwm hotkeys
