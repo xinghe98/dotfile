@@ -8,6 +8,10 @@ super + Return
     wezterm
 
 super + shift + Return
+    alacritty
+
+
+super + alt + Return
     bspc rule -a org.wezfurlong.wezterm -o state=floating follow=on center=true && wezterm
 
 ctrl + alt + t

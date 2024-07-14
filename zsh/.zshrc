@@ -40,6 +40,7 @@ bindkey -v
 # Go加速
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn,direct
+export PATH="/usr/bin/flutter/bin:$PATH"
 
 # 加载zinit
 if [[ ! -d ~/.zinit ]];then 
@@ -137,7 +138,6 @@ source $ZDOTDIR/.zsh/aliases.zsh
 source $ZDOTDIR/.zsh/keymaps.zsh
 
 # 环境变量
-export PATH="/home/feng/.local/bin:/home/feng/.luarocks/bin:$PATH"
 export dirs="~/MyTools/resources/dir.list"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
