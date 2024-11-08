@@ -41,7 +41,7 @@ bindkey -v
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn,direct
 export PATH="/usr/bin/flutter/bin:$PATH"
-
+export PATH="$PATH:/opt/nvim-linux64/bin"
 # 加载zinit
 if [[ ! -d ~/.zinit ]];then 
   git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
@@ -148,8 +148,13 @@ export dirs="~/MyTools/resources/dir.list"
 #  eval "$(pyenv init -)"
 # fi
 # eval "$(pyenv virtualenv-init -)"
+#
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias vi='nvim'
+alias kssh='kitten ssh'
 alias sudovim='sudoedit'
 alias vizsh="vim $HOME/.zshrc"
 alias vibash="vim $HOME/.bashrc"
